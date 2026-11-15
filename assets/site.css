@@ -330,6 +330,41 @@ main:focus {
   margin-bottom: 24px;
 }
 
+/* Home page */
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.lead {
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+/* The App Store's place, until the app is there: a label, not a link */
+.soon {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  margin: 10px 0 8px;
+  padding: 12px 20px;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
 .prose h2 {
   font-size: 25px;
   margin: 40px 0 12px;
