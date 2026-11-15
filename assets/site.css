@@ -1,0 +1,542 @@
+/* TorqueWise website: the Privacy, Support, Terms and 404 pages. The calculator at the site's root has its own styles.
+   Colors are the calculator's tokens (src/style.css); light follows the system setting, as in the calculator. The fonts
+   are the calculator's own files in /fonts/ (build/web/fonts/), so the pages ask no other host for anything. */
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/barlow-semi-condensed-latin-ext-600-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/barlow-semi-condensed-latin-600-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/barlow-semi-condensed-latin-ext-700-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/barlow-semi-condensed-latin-700-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-latin-ext-400-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/inter-latin-ext-500-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/inter-latin-500-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/inter-latin-ext-600-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/inter-latin-600-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --bg: #eceef0;
+  --surface: #ffffff;
+  --surface-2: #f4f5f6;
+  --line: #d8dce0;
+  --line-2: #c5cbd1;
+  --ink: #14171a;
+  --muted: #59616a;
+  --accent: #c99a22;
+  --accent-ink: #7a5b0b;
+  --shadow: 0 1px 2px rgba(20, 23, 26, .06), 0 10px 30px rgba(20, 23, 26, .07);
+  --f-display: 'Barlow Semi Condensed', 'Arial Narrow', 'Helvetica Neue', system-ui, sans-serif;
+  --f-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --r-md: 14px;
+  --r-sm: 10px;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1113;
+    --surface: #171a1d;
+    --surface-2: #1e2226;
+    --line: #2a2f34;
+    --line-2: #39404a;
+    --ink: #eceff1;
+    --muted: #a2aab2;
+    --accent: #e2b547;
+    --accent-ink: #f0c96a;
+    --shadow: 0 1px 0 rgba(255, 255, 255, .03) inset, 0 12px 30px rgba(0, 0, 0, .35);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f1113;
+  --surface: #171a1d;
+  --surface-2: #1e2226;
+  --line: #2a2f34;
+  --line-2: #39404a;
+  --ink: #eceff1;
+  --muted: #a2aab2;
+  --accent: #e2b547;
+  --accent-ink: #f0c96a;
+  --shadow: 0 1px 0 rgba(255, 255, 255, .03) inset, 0 12px 30px rgba(0, 0, 0, .35);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 var(--f-body);
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: .005em;
+  text-wrap: balance;
+}
+
+[id] {
+  scroll-margin-top: 16px;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 14px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+li {
+  margin: 0 0 6px;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip link: off screen until it has focus */
+.skip {
+  position: absolute;
+  left: 16px;
+  top: -200px;
+  z-index: 90;
+  padding: 10px 16px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow);
+  font-weight: 600;
+}
+
+.skip:focus {
+  top: 12px;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+}
+
+/* Header: the calculator's brand, which links back to it, and the three pages */
+.site-head {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.site-head .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 60px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand svg {
+  flex: none;
+  width: 30px;
+  height: 30px;
+}
+
+.brand-name {
+  font: 700 22px/1 var(--f-display);
+  letter-spacing: .01em;
+}
+
+.brand-name span {
+  color: var(--accent-ink);
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  margin: 0;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 10px;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: var(--ink);
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+/* Main */
+main {
+  display: block;
+  padding: 32px 0 56px;
+}
+
+main:focus {
+  outline: none;
+}
+
+.prose {
+  max-width: 720px;
+}
+
+.page-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.prose h2 {
+  font-size: 25px;
+  margin: 40px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.prose h3 {
+  font-size: 20px;
+  margin: 28px 0 8px;
+}
+
+.prose .first {
+  margin-top: 28px;
+}
+
+.toc {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 16px 20px 6px;
+  margin: 8px 0;
+}
+
+.toc h2 {
+  font: 600 13px/1.4 var(--f-body);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+}
+
+.toc ol,
+.toc ul {
+  margin: 0 0 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.toc li {
+  margin: 0 0 4px;
+  break-inside: avoid;
+}
+
+.toc a {
+  display: inline-block;
+  padding: 2px 0;
+  text-decoration-thickness: 1px;
+}
+
+.summary {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-sm);
+  padding: 16px 20px 4px;
+  margin: 0 0 20px;
+}
+
+.caps {
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: .01em;
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.8;
+  margin: 0 0 14px;
+}
+
+.contact-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 18px 20px;
+  margin: 0 0 16px;
+  box-shadow: var(--shadow);
+}
+
+.contact-box .email {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-box > :last-child {
+  margin-bottom: 0;
+}
+
+.faq h3 {
+  margin-top: 26px;
+}
+
+/* Footer */
+.site-foot {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  padding: 28px 0 calc(36px + env(safe-area-inset-bottom, 0px));
+}
+
+.site-foot a {
+  color: var(--muted);
+  text-decoration-color: var(--line-2);
+}
+
+.site-foot a:hover {
+  color: var(--ink);
+  text-decoration-color: var(--accent);
+}
+
+.foot-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 24px;
+  margin-bottom: 14px;
+}
+
+.site-foot .foot-brand {
+  margin: 0;
+  color: var(--ink);
+}
+
+.foot-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foot-links li {
+  margin: 0;
+}
+
+.foot-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+}
+
+.site-foot p {
+  margin: 0 0 6px;
+}
+
+/* Phones: the brand shows its mark only, and its name stays for screen readers (each page's title names TorqueWise
+   just below), so the mark and the three links keep to one line down to 320 px */
+@media (max-width: 479px) {
+  .site-head .wrap {
+    gap: 8px;
+  }
+
+  .brand-name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .site-nav {
+    margin-right: -8px;
+  }
+
+  .site-nav ul {
+    gap: 0;
+  }
+
+  .site-nav a {
+    padding: 0 8px;
+  }
+
+  .page-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 720px) {
+  .toc ol {
+    columns: 2;
+    column-gap: 32px;
+  }
+
+  .page-title {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 960px) {
+  main {
+    padding-top: 48px;
+  }
+}
+
+@media print {
+  .skip,
+  .site-nav {
+    display: none;
+  }
+
+  .site-foot {
+    border-top: 0;
+  }
+}
