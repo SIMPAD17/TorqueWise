@@ -60,14 +60,17 @@
         <ul>
           <li><a href="#what-is">What is TorqueWise?</a></li>
           <li><a href="#free-pro">What is free, and what does TorqueWise Pro add?</a></li>
+          <li><a href="#grayed">Why are some options grayed out?</a></li>
           <li><a href="#cost">How much does TorqueWise Pro cost?</a></li>
           <li><a href="#other-device">How do I turn on TorqueWise Pro on another iPhone or iPad?</a></li>
           <li><a href="#refund">How do I get a refund?</a></li>
           <li><a href="#standards">Which standards does TorqueWise follow?</a></li>
+          <li><a href="#final">Can I use a result as the final value?</a></li>
           <li><a href="#accuracy">How accurate are the results?</a></li>
           <li><a href="#charts">Why does the torque differ from a torque chart?</a></li>
           <li><a href="#manufacturer">The manufacturer gives a different torque. Which one do I use?</a></li>
           <li><a href="#units">Which units does TorqueWise use?</a></li>
+          <li><a href="#parts">How do I buy the parts for a joint?</a></li>
           <li><a href="#saved">Where are my saved joints stored?</a></li>
           <li><a href="#delete-data">How do I delete my saved joints?</a></li>
           <li><a href="#offline">Does TorqueWise work offline?</a></li>
@@ -80,7 +83,11 @@
         <p>A bolt torque and preload calculator for iPhone and iPad. Pick the bolt (size, head, grade, finish, and thread condition), the joint (through bolt or tapped hole, clamped material, grip, washer, and nut), and the preload target and tool. TorqueWise gives the tightening torque, the preload and its expected range, checks of bearing pressure, thread engagement, bolt length, corrosion, and lock nuts, and the tightening sequence for the bolt pattern. A 3D view shows the bolt in a cut-away of the joint. It is free to download, and TorqueWise Pro is a one-time purchase in the app.</p>
 
         <h3 id="free-pro">What is free, and what does TorqueWise Pro add?</h3>
-        <p>Free: every bolt and joint input, the set torque, the preload with its expected range and gauge, the Standard preload target, the 3D view and the section drawing, every note of the checks, and the standards used and Sources and method. TorqueWise Pro adds the VDI 2230 limit, Gasket flange, and Structural preload targets, the check tiles, where the torque goes, the tightening sequence, the drawing callout and Copy callout, Show the calculation, and saved joints.</p>
+        <p>Free: metric M6, M8, M10, and M12 hex bolts in property class 8.8 or 10.9, zinc-plated or plain, dry or oiled, as a through bolt and nut in mild steel, with the Standard preload target and a torque wrench, with any washer, nut, grip, and number of bolts. For these you get the set torque, the preload with its expected range and gauge, the 3D view and the section drawing, every note of the checks, the Parts panel and the fastener bin, and the standards used and Sources and method. TorqueWise Pro unlocks every other size (including inch), head, grade, finish, thread condition, clamped material, the tapped hole, a measured friction coefficient, and the other tools, and adds the VDI 2230 limit, Gasket flange, and Structural preload targets, the check tiles, where the torque goes, the tightening sequence, the drawing callout and Copy callout, Show the calculation, and saved joints.</p>
+
+        <h3 id="grayed">Why are some options grayed out?</h3>
+        <p>Without TorqueWise Pro the app is a preview: it shows every option, and the ones that need TorqueWise Pro are grayed with a lock. Tap one to see what Pro adds and its price; after you buy TorqueWise Pro, the option you tapped is picked and every option works.</p>
+        <p>An option grayed without a lock is not made with your other choices, for example Grade 8 on an inch socket head, or hot-dip galvanizing on a 12.9 bolt. Tap it to see what is made and what to pick instead.</p>
 
         <h3 id="cost">How much does TorqueWise Pro cost?</h3>
         <p>In the United States, US$9.99, once. There is no subscription. Prices differ in other countries; the app shows the price for your country before you confirm.</p>
@@ -94,6 +101,9 @@
         <h3 id="standards">Which standards does TorqueWise follow?</h3>
         <p>The torque and preload follow VDI 2230 Part 1 (2015). The grades’ strengths come from their material standards, such as ISO 898-1 and SAE J429, and the dimensions of bolts, nuts, washers, and holes from their product standards. The structural targets follow the RCSC Specification and EN 1090-2, and the gasket flange target and the cross-pattern tightening sequence follow ASME PCC-1. Sources and method in TorqueWise lists every source and how each one is used.</p>
 
+        <h3 id="final">Can I use a result as the final value?</h3>
+        <p>No. TorqueWise gives reference values for planning a bolted joint: estimates from published methods and the inputs you choose, not engineering advice. Before you use a value, confirm it for your parts by physical testing or by engineering analysis or simulation, done or checked by a qualified person. The app says so in a notice when you first open it and in a line under every result (<a href="../terms/#use">Terms of Use, section 4</a>).</p>
+
         <h3 id="accuracy">How accurate are the results?</h3>
         <p>The calculation is checked against published values: VDI 2230 Table A1, Fastenal clamp-load tables, RCSC Table 5.2, EN 1090-2 preload values, and ISO 2320. Sources and method runs these 27 checks each time you open it and shows each result. The largest uncertainty in a real joint is friction: the same torque gives a different preload when the friction changes, and friction varies with the finish, the lubricant and how it is applied, the batch, and the tool. TorqueWise shows the expected preload range for the tool you choose. Where preload matters, measure the friction of your parts (ISO 16047) and enter it, or measure the preload directly. The <a href="../terms/#accuracy">Terms of Use</a> list what the calculation leaves out.</p>
 
@@ -106,8 +116,11 @@
         <h3 id="units">Which units does TorqueWise use?</h3>
         <p>Metric bolts give the torque in N·m and the preload in kN. Inch bolts give the torque in ft·lb, or in in·lb for small torques, and the preload in lbf. Under the main torque, TorqueWise also shows it in the other system’s unit.</p>
 
+        <h3 id="parts">How do I buy the parts for a joint?</h3>
+        <p>The Parts panel lists the joint’s bolts, nuts, and washers with their quantities. Each line links to the search of McMaster-Carr, Bolt Depot, and Amazon, which opens in your browser; check that the part a store shows matches the line before you buy. Add to bin collects the parts of several joints in the fastener bin, and Copy list copies them as text. McMaster-Carr’s order page also takes a pasted list of its own part numbers. TorqueWise is not affiliated with these stores and sells nothing from them.</p>
+
         <h3 id="saved">Where are my saved joints stored?</h3>
-        <p>On your device only. They are stored in the app and included in iCloud and computer backups of your device. TorqueWise has no account and does not sync saved joints between devices.</p>
+        <p>On your device only. They are stored in the app and included in iCloud and computer backups of your device, as is the fastener bin. TorqueWise has no account and does not sync saved joints between devices.</p>
 
         <h3 id="delete-data">How do I delete my saved joints?</h3>
         <p>Open Saved, tap Delete next to a joint, then tap Confirm. To delete everything, delete the app.</p>
@@ -116,7 +129,7 @@
         <p>Yes. The calculator works without a connection. Buying and restoring TorqueWise Pro need one.</p>
 
         <h3 id="information">What does TorqueWise do with my information?</h3>
-        <p>Nothing you enter leaves your device. TorqueWise collects no personal information and has no account, no ads, and no analytics, and Apple handles the purchase of TorqueWise Pro. The <a href="../privacy/">Privacy Policy</a> has the details.</p>
+        <p>Nothing you enter leaves your device, except a part’s description when you tap a store link. TorqueWise collects no personal information and has no account, no ads, and no analytics, and Apple handles the purchase of TorqueWise Pro. The <a href="../privacy/">Privacy Policy</a> has the details.</p>
       </div>
 
       <h2 id="legal">Legal</h2>
