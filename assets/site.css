@@ -343,18 +343,31 @@ main:focus {
   line-height: 1.45;
 }
 
-/* The App Store's place, until the app is there: a label, not a link */
-.soon {
+/* The App Store link: text in the calculator's primary button (src/style.css, .btn.primary), not Apple's badge image,
+   so the page still asks no other host for anything */
+.store {
+  display: flex;
+  margin: 10px 0 8px;
+}
+
+.store a {
   display: inline-flex;
   align-items: center;
   min-height: 48px;
-  margin: 10px 0 8px;
   padding: 12px 20px;
-  border: 1px solid var(--line-2);
+  border: 1px solid var(--ink);
   border-radius: var(--r-sm);
-  background: var(--surface-2);
-  color: var(--muted);
+  background: var(--ink);
+  color: var(--bg);
   font-weight: 600;
+  text-decoration: none;
+}
+
+.store a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .small {
